@@ -37,15 +37,15 @@ This project is a **Multi AI Agent Application** designed to run multiple AI age
 
 #### Core Components
 
-- **AI Agent (**``**)**: Handles interactions with AI models using `ChatGroq`. Supports optional external search with `TavilySearchResults`. Wraps the logic in a reactive agent via `LangGraph`.
+- **AI Agent **: Handles interactions with AI models using `ChatGroq`. Supports optional external search with `TavilySearchResults`. Wraps the logic in a reactive agent via `LangGraph`.
 
-- **Backend (**``**)**: FastAPI-based backend exposing `/chat` endpoint. Validates model names, calls AI agent logic, and returns AI responses.
+- **Backend**: FastAPI-based backend exposing `/chat` endpoint. Validates model names, calls AI agent logic, and returns AI responses.
 
-- **Frontend (**``**)**: Streamlit frontend that starts backend in a separate thread and allows users to interact with multiple AI agents.
+- **Frontend**: Streamlit frontend that starts backend in a separate thread and allows users to interact with multiple AI agents.
 
-- **Orchestrator (**``**)**: Launches both backend and frontend together.
+- **Orchestrator**: Launches both backend and frontend together.
 
-- **Configuration (**``**)**: Loads environment variables (API keys) and stores allowed AI model names.
+- **Configuration**: Loads environment variables (API keys) and stores allowed AI model names.
 
 #### Agents in the System
 
